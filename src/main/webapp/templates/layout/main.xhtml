@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>JSF Bootstrap Starter</title>
+
+    <h:outputStylesheet library="webjars" name="bootstrap/3.3.7/css/bootstrap.min-jsf.css" />
+    <h:outputStylesheet library="webjars" name="bootstrap/3.3.7/css/bootstrap-theme.min-jsf.css" />
+    <h:outputStylesheet library="webjars" name="font-awesome/4.7.0/css/font-awesome.min-jsf.css" />
+    <h:outputStylesheet name="css/style.css" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="#{request.contextPath}/resources/img/favicon.png"/>
+
+</h:head>
+<h:body>
+
+    <ui:include src="../include/navbar.xhtml" />
+    <div class="container theme-showcase" role="main">
+        <ui:include src="../include/header.xhtml" />
+        <ui:include src="../include/content.xhtml" />
+        <ui:include src="../include/footer.xhtml" />
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <h:outputScript library="webjars" name="jquery/3.2.1/jquery.min.js"/>
+    <h:outputScript library="webjars" name="bootstrap/3.3.7/js/bootstrap.min.js" />
+    <h:outputScript library="webjars" name="holderjs/2.5.2/holder.js" />
+
+</h:body>
+</html>
